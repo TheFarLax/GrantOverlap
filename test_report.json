@@ -1,0 +1,152 @@
+{
+  "network": "Studionet",
+  "chain_id": 61999,
+  "contract_address": "0x3C8349789a311Fa354A6b241ac871df6FB3468b5",
+  "repository": "github/gitignore",
+  "demo_reviewer_and_recipient": "0xae02A94342A806f7265332f0A63B199B91fa47c8",
+  "transactions": {
+    "register-grant-a": {
+      "tx_hash": "0x54e6b751d8a783d99ce422e652174788e8395891e6720da2dc46d5075e0192ae",
+      "explorer_url": "https://explorer-studio.genlayer.com/tx/0x54e6b751d8a783d99ce422e652174788e8395891e6720da2dc46d5075e0192ae",
+      "status": "FINALIZED",
+      "vote_result": "MAJORITY_AGREE",
+      "execution_result": "SUCCESS",
+      "error_code": null
+    },
+    "register-grant-b": {
+      "tx_hash": "0xfbf733ca48d69ffc12c570a598375e1c90f7ae97a3d03c5a0608e15a1c26b9e8",
+      "explorer_url": "https://explorer-studio.genlayer.com/tx/0xfbf733ca48d69ffc12c570a598375e1c90f7ae97a3d03c5a0608e15a1c26b9e8",
+      "status": "FINALIZED",
+      "vote_result": "MAJORITY_AGREE",
+      "execution_result": "SUCCESS",
+      "error_code": null
+    },
+    "funded-celery": {
+      "tx_hash": "0xfa59f15055d4a5506aef925db532548c2fa52347417a71dc58c3247519056c06",
+      "explorer_url": "https://explorer-studio.genlayer.com/tx/0xfa59f15055d4a5506aef925db532548c2fa52347417a71dc58c3247519056c06",
+      "status": "FINALIZED",
+      "vote_result": "MAJORITY_AGREE",
+      "execution_result": "ERROR",
+      "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+    },
+    "duplicate-commit": {
+      "tx_hash": "0x1853bda4a9c1ec1116195d59ba43c3f8af998056e86ac937f619ef4f7b8ac723",
+      "explorer_url": "https://explorer-studio.genlayer.com/tx/0x1853bda4a9c1ec1116195d59ba43c3f8af998056e86ac937f619ef4f7b8ac723",
+      "status": "FINALIZED",
+      "vote_result": "MAJORITY_AGREE",
+      "execution_result": "SUCCESS",
+      "error_code": null
+    },
+    "duplicate-work": {
+      "tx_hash": "0x3ec00a4607297bfcc8ea8a8c41e32535265d82443dcd95858c31f974939248ea",
+      "explorer_url": "https://explorer-studio.genlayer.com/tx/0x3ec00a4607297bfcc8ea8a8c41e32535265d82443dcd95858c31f974939248ea",
+      "status": "FINALIZED",
+      "vote_result": "MAJORITY_AGREE",
+      "execution_result": "SUCCESS",
+      "error_code": null
+    },
+    "funded-coverage": {
+      "tx_hash": "0xa5ab87f951f3d1e89cc6481ce33cb8e6f2bfd079f1c932060c9886ba78c28c4c",
+      "explorer_url": "https://explorer-studio.genlayer.com/tx/0xa5ab87f951f3d1e89cc6481ce33cb8e6f2bfd079f1c932060c9886ba78c28c4c",
+      "status": "FINALIZED",
+      "vote_result": "MAJORITY_AGREE",
+      "execution_result": "SUCCESS",
+      "error_code": null
+    },
+    "missing-file": {
+      "tx_hash": "0x11d2630550a1561853f8bbda80f422223bc2a8e2763f2ac59388532b7fe3306a",
+      "explorer_url": "https://explorer-studio.genlayer.com/tx/0x11d2630550a1561853f8bbda80f422223bc2a8e2763f2ac59388532b7fe3306a",
+      "status": "FINALIZED",
+      "vote_result": "MAJORITY_AGREE",
+      "execution_result": "SUCCESS",
+      "error_code": null
+    }
+  },
+  "claims": {
+    "funded-celery": {
+      "awarded_credits": 30,
+      "commit_url": "https://github.com/github/gitignore/commit/2a4ac93e7906d35e962cdf70fea80f92f98da1ed",
+      "description": "Add a wildcard to the celerybeat-schedule ignore rule to cover all generated schedule files.",
+      "file_path": "Python.gitignore",
+      "matched_claim_id": "",
+      "patch_sha256": "b17f71c22072c3d3a75dff5b9d7338a57dce6ad674600970d51538a57f341f36",
+      "program_id": "grant-a",
+      "reason": "The patch supports the claim and shows distinct work.",
+      "recipient": "0xae02A94342A806f7265332f0A63B199B91fa47c8",
+      "requested_credits": 30,
+      "verdict": "APPROVED"
+    },
+    "duplicate-commit": {
+      "awarded_credits": 0,
+      "commit_url": "https://github.com/github/gitignore/commit/2a4ac93e7906d35e962cdf70fea80f92f98da1ed",
+      "description": "Expand the ignore rule for generated Celery Beat schedules.",
+      "file_path": "Python.gitignore",
+      "matched_claim_id": "funded-celery",
+      "patch_sha256": "b17f71c22072c3d3a75dff5b9d7338a57dce6ad674600970d51538a57f341f36",
+      "program_id": "grant-b",
+      "reason": "This commit and file were already funded.",
+      "recipient": "0xae02A94342A806f7265332f0A63B199B91fa47c8",
+      "requested_credits": 30,
+      "verdict": "DUPLICATE"
+    },
+    "duplicate-work": {
+      "awarded_credits": 0,
+      "commit_url": "https://github.com/github/gitignore/commit/576334520435382d6522f349b9d270eda1e79a25",
+      "description": "Ignore Celery Beat schedule files that share the same filename prefix.",
+      "file_path": "Python.gitignore",
+      "matched_claim_id": "funded-celery",
+      "patch_sha256": "114e8c83b664715027ee7d96efd28c4841b20322921e3681e33ed8a0632e4d27",
+      "program_id": "grant-b",
+      "reason": "The patch materially repeats previously funded work.",
+      "recipient": "0xae02A94342A806f7265332f0A63B199B91fa47c8",
+      "requested_credits": 30,
+      "verdict": "DUPLICATE"
+    },
+    "funded-coverage": {
+      "awarded_credits": 25,
+      "commit_url": "https://github.com/github/gitignore/commit/cd33ea10e8ce2524c06530a9d9a3628644be70b7",
+      "description": "Ignore generated LCOV coverage files using the *.lcov pattern.",
+      "file_path": "Python.gitignore",
+      "matched_claim_id": "",
+      "patch_sha256": "3413d7b0753fbdc502c687ef741e8a550d7139e7eed7d9f1c9c557ccd3634900",
+      "program_id": "grant-b",
+      "reason": "The patch supports the claim and shows distinct work.",
+      "recipient": "0xae02A94342A806f7265332f0A63B199B91fa47c8",
+      "requested_credits": 25,
+      "verdict": "APPROVED"
+    },
+    "missing-file": {
+      "awarded_credits": 0,
+      "commit_url": "https://github.com/github/gitignore/commit/cd33ea10e8ce2524c06530a9d9a3628644be70b7",
+      "description": "Record an export implementation in the manifest.",
+      "file_path": "missing-manifest.json",
+      "matched_claim_id": "",
+      "patch_sha256": "",
+      "program_id": "grant-b",
+      "reason": "A complete, supported GitHub file diff is required.",
+      "recipient": "0xae02A94342A806f7265332f0A63B199B91fa47c8",
+      "requested_credits": 20,
+      "verdict": "NEEDS_EVIDENCE"
+    }
+  },
+  "finalized_balances": {
+    "demo_credit_balance": 55,
+    "programs": {
+      "grant-a": {
+        "budget": 100,
+        "remaining": 70,
+        "reviewer": "0xae02A94342A806f7265332f0A63B199B91fa47c8"
+      },
+      "grant-b": {
+        "budget": 150,
+        "remaining": 125,
+        "reviewer": "0xae02A94342A806f7265332f0A63B199B91fa47c8"
+      }
+    },
+    "funded_ids": [
+      "funded-celery",
+      "funded-coverage"
+    ]
+  },
+  "passed_claim_cases": 5
+}

@@ -1,0 +1,20 @@
+{
+  "network": "Studionet",
+  "chain_id": 61999,
+  "rpc_url": "https://studio.genlayer.com/api",
+  "repository": "github/gitignore",
+  "deployer": "0xae02A94342A806f7265332f0A63B199B91fa47c8",
+  "source_file": "contracts/grant_overlap.py",
+  "source_sha256": "7aeb75503e82a369e295e2eba8061d43ae6ce7d9125df1eaaf0e5700768c70f7",
+  "deploy_tx": {
+    "tx_hash": "0x0d23fabcf8c668d2491f920c1166ded525fe1b278971c3ebaf230b407f048da6",
+    "explorer_url": "https://explorer-studio.genlayer.com/tx/0x0d23fabcf8c668d2491f920c1166ded525fe1b278971c3ebaf230b407f048da6",
+    "status": "FINALIZED",
+    "vote_result": "MAJORITY_AGREE",
+    "execution_result": "SUCCESS",
+    "error_code": null
+  },
+  "contract_address": "0x3C8349789a311Fa354A6b241ac871df6FB3468b5",
+  "onchain_source_sha256": "7aeb75503e82a369e295e2eba8061d43ae6ce7d9125df1eaaf0e5700768c70f7",
+  "source_matches_onchain": true
+}
